@@ -5,11 +5,17 @@ Bài toán này tập trung vào nhiệm vụ phân loại cảm xúc theo từn
 - Thu thập dữ liệu: 5323 mẫu của các bình luận trích từ Kaggle, sau đó dữ liệu được gán nhãn khía cạnh và cảm xúc.
 - Khía cạnh: 
   Tên	          Mô tả
+  
   Price	        Nhận xét liên quan đến giá cả, chi phí
+  
   Quality	      Nhận xét về chất lượng món ăn, hương vị, số lượng
+  
   Environment	  Không gian, nội thất, vị trí, không khí
+  
   Service	      Thái độ phục vụ, nhân viên, tốc độ phục vụ
+  
   Other	        Trường hợp chung, không thuộc các nhóm trên
+  
 - Cảm xúc: Positive - Tích cực, Negative - Tiêu cực, Neutral - Trung tính
 - Gán nhãn dữ liệu: gán nhãn trên 1,123 mẫu cho tới khi độ đồng thuận > 0.7
 ![image](https://github.com/user-attachments/assets/0328d280-ffe5-40d1-b1a4-a103b57c6024)
