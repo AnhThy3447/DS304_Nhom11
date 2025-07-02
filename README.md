@@ -1,6 +1,10 @@
 # DS304 - Thiết kế và phân tích thực nghiệm
 ## Giới thiệu:
-Bài toán này tập trung vào nhiệm vụ phân loại cảm xúc theo từng khía cạnh trong một bình luận. Hệ thống được xây dựng để nhận diện các khía cạnh liên quan và xác định thái độ của người dùng đối với từng khía cạnh, qua đó ước lượng mức độ hài lòng một cách chi tiết và chính xác hơn.
+Phân Tích Cảm xúc Dựa Trên Khía Cạnh
+- Nhiệm vụ 1: Phát hiện khía cạnh
+- Nhiệm vụ 2: Phân loại cảm xúc dựa trên khía cạnh
+![image](https://github.com/user-attachments/assets/843eb507-0e3e-4835-9575-2a5f2edc1445)
+
 ## Bộ dữ liệu:
 - Thu thập dữ liệu: 5323 mẫu của các bình luận trích từ Kaggle, sau đó dữ liệu được gán nhãn khía cạnh và cảm xúc.
 - Khía cạnh:
