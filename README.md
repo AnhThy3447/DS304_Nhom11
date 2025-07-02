@@ -3,7 +3,8 @@
 Bài toán này tập trung vào nhiệm vụ phân loại cảm xúc theo từng khía cạnh trong một bình luận. Hệ thống được xây dựng để nhận diện các khía cạnh liên quan và xác định thái độ của người dùng đối với từng khía cạnh, qua đó ước lượng mức độ hài lòng một cách chi tiết và chính xác hơn.
 ## Bộ dữ liệu:
 - Thu thập dữ liệu: 5323 mẫu của các bình luận trích từ Kaggle, sau đó dữ liệu được gán nhãn khía cạnh và cảm xúc.
-- Khía cạnh: 
+- Khía cạnh:
+  
 | Tên         | Mô tả                                                 |
 |-------------|--------------------------------------------------------|
 | Price       | Nhận xét liên quan đến giá cả, chi phí                |
