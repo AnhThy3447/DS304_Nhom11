@@ -1,12 +1,16 @@
-# DS304 - Thiết kế và phân tích thực nghiệm
-## Giới thiệu:
-Phân Tích Cảm xúc Dựa Trên Khía Cạnh
+_DS304 - Thiết kế và phân tích thực nghiệm_
+# Dự Đoán Mức Độ Hài Lòng Của Khách Hàng Từ Các Bình Luận Tại Nhà Hàng
+## I. Giới thiệu:
+•	Bài toán lớn (Generalized Problem): Phân Tích Phản Hồi Khách Hàng Theo Khía Cạnh Cho Nhà Hàng
+<img width="1748" height="297" alt="image" src="https://github.com/user-attachments/assets/bf9890f1-3394-486e-ac5b-0d0526d368fc" />
+
+•	Bài toán nhỏ (Specialized Problem): Phân Tích Cảm xúc Bình Luận của Khách Hàng Dựa Trên Khía Cạnh, với hai nhiệm vụ chính:
 - Nhiệm vụ 1: Phát hiện khía cạnh
 - Nhiệm vụ 2: Phân loại cảm xúc dựa trên khía cạnh
-![image](https://github.com/user-attachments/assets/843eb507-0e3e-4835-9575-2a5f2edc1445)
+<img width="1732" height="290" alt="image" src="https://github.com/user-attachments/assets/364147df-1af5-4395-b73d-9cce06af8de4" />
 
-## Bộ dữ liệu:
-- Thu thập dữ liệu: 5323 mẫu của các bình luận trích từ Kaggle, sau đó dữ liệu được gán nhãn khía cạnh và cảm xúc.
+## II. Bộ dữ liệu:
+- [Bộ dữ liệu](raw_data.csv): 5323 mẫu của các bình luận trích từ Kaggle, sau đó dữ liệu được gán nhãn khía cạnh và cảm xúc.
 - Khía cạnh:
   
 | Tên         | Mô tả                                                 |
@@ -16,15 +20,24 @@ Phân Tích Cảm xúc Dựa Trên Khía Cạnh
 | Environment | Không gian, nội thất, vị trí, không khí               |
 | Service     | Thái độ phục vụ, nhân viên, tốc độ phục vụ            |
 | Other       | Trường hợp chung, không thuộc các nhóm trên          |
-- Cảm xúc: Positive - Tích cực, Negative - Tiêu cực, Neutral - Trung tính
-- Gán nhãn dữ liệu: gán nhãn trên 1,123 mẫu cho tới khi độ đồng thuận > 0.7
-![image](https://github.com/user-attachments/assets/0328d280-ffe5-40d1-b1a4-a103b57c6024)
-## Tiền xử lý dữ liệu:
-![image](https://github.com/user-attachments/assets/71067227-fea9-46fe-8078-4a070da0c964)
-## Mô hình:
-Thư mục Model gồm:
-- aspect_labels.csv: đầu vào cho bài toán Aspect Regconition
-- aspect_sentiments.csv: đầu vào cho bài toán Aspect-based Sentiment Analysis
-- model.ipynb: source code
-![image](https://github.com/user-attachments/assets/fb69490d-3794-45d9-a9fe-b7de9e2484e5)
-2 đầu vào được sử dụng nhằm giúp đánh giá riêng biệt độ chính xác của mỗi bài toán, khi thực hiện thực nghiệm, input cho bài toán 2 là output của bài toán 1.
+- Cảm xúc:
+  - Positive - Tích cực
+  - Negative - Tiêu cực
+  - Neutral - Trung tính
+- Quy trình:
+<img width="1059" height="305" alt="image" src="https://github.com/user-attachments/assets/db5c98da-058a-4f49-8084-2240f5ed637b" />
+
+## III. Huấn luyện mô hình
+- Thư mục [Dictionaries](Dictionaries/): phục vụ cho quá trình tiền xử lý
+- File tiền xử lý ...
+- Quá trình thực nghiệm sẽ được trình bày trong source code cho bài toán nhỏ, sẽ được nhắc tới bên dưới.
+<img width="1349" height="300" alt="image" src="https://github.com/user-attachments/assets/ce84db5f-401f-4956-95eb-72447a7047a1" />
+
+- Thư mục Model gồm:
+  - data:
+    - [data_after_preprocessing.csv](Model/data/data_after_preprocessing.csv): là đầu vào cho bài toán nhỏ.
+    - [restaurants.csv](Model/data/restaurants.csv): là đầu vào cho bài toán lớn, nhằm mô phỏng kết quả của mô hình khi chạy trên tập dữ liệu từ 2 nhà hàng riêng biệt.
+  - [Generalized_problem.ipynb](Model/data/Generalized_problem.ipynb)
+  - [Specialized_problem_Aspect_Regconition.ipynb](Model/data/Specialized_problem_Aspect_Regconition.ipynb)
+  - [Specialized_problem_ABSA.ipynb](Model/data/Specialized_problem_ABSA.ipynb)
+<img width="1229" height="235" alt="image" src="https://github.com/user-attachments/assets/ee761251-bc9c-41a4-8620-47c24fdbcc0b" />
