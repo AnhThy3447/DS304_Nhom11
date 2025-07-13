@@ -111,8 +111,8 @@ Một tập dữ liệu các câu bình luận từ 2 nhà hàng được thu th
     - [Specialized_problem_ABSA.ipynb](Model/data/Specialized_problem_ABSA.ipynb): giải quyết bài toán nhỏ - nhiệm vụ 2
       
 ## 5. Tổng kết
-- Trình bày tại: [Slide](ds304_slide.pdf)
-- Phân tích chi tiết: [Paper](ds304_paper.pdf)
+- Trình bày tại: [Slide](slide.pdf)
+- Phân tích chi tiết: [Paper](paper.pdf)
 
 ## V. Thành viên:
 | Họ và tên              | MSSV       |
