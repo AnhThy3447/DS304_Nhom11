@@ -49,6 +49,7 @@ Thư mục Preprocessing bao gồm:
   - Loại bỏ dấu câu (Punctuation Removal)
   - Chuyển đổi chữ hoa thành chữ thường (Case Conversion)
   - Chuẩn hóa từ ngữ (Normalization)
+  - Kiểm tra lỗi chính tả (Typo Correction)
   - Rút trích đặc trưng (Embeddings): nhóm thực hiện thực nghiệm thống kê nhằm chọn ra phương pháp embedding phù hợp nhất
 - [raw_data.csv](Preprocessing/raw_data.csv)
 - [test_restaurants.csv](Preprocessing/test_restaurants.csv)
