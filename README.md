@@ -2,13 +2,15 @@ _DS304 - Thiết kế và phân tích thực nghiệm_
 # Dự Đoán Mức Độ Hài Lòng Của Khách Hàng Từ Các Bình Luận Tại Nhà Hàng
 
 # Mục lục
-1. [Giới thiệu](#i-giới-thiệu)
-2. [Bộ dữ liệu](#ii-bộ-dữ-liệu)
-3. [Huấn luyện mô hình](#iii-huấn-luyện-mô-hình)
-4. [Tổng kết](#iv-tổng-kết)
-5. [Thành viên](#v-thành-viên)
-   
-## 1. Giới thiệu:
+
+- [1. Giới thiệu](#1-giới-thiệu)
+- [2. Bộ dữ liệu](#2-bộ-dữ-liệu)
+- [3. Tiền xử lý](#3-tiền-xử-lý)
+- [4. Huấn luyện mô hình](#4-huấn-luyện-mô-hình)
+- [5. Tài liệu liên quan](#5-tài-liệu-liên-quan)
+- [6. Thành viên](#6-thành-viên)
+
+## 1. Giới thiệu
 •	**Bài toán lớn (Generalized Problem):** Phân Tích Phản Hồi Khách Hàng Theo Khía Cạnh Cho Nhà Hàng
 <img width="1748" height="297" alt="image" src="https://github.com/user-attachments/assets/bf9890f1-3394-486e-ac5b-0d0526d368fc" />
 
@@ -17,7 +19,7 @@ _DS304 - Thiết kế và phân tích thực nghiệm_
 - _Nhiệm vụ 2:_ Phân loại cảm xúc dựa trên khía cạnh
 <img width="1732" height="290" alt="image" src="https://github.com/user-attachments/assets/364147df-1af5-4395-b73d-9cce06af8de4" />
 
-## 2. Bộ dữ liệu:
+## 2. Bộ dữ liệu
 ### Bộ dữ liệu: 
 5323 mẫu của các bình luận trích từ Kaggle, sau đó dữ liệu được gán nhãn khía cạnh và cảm xúc.
 
@@ -41,7 +43,7 @@ _DS304 - Thiết kế và phân tích thực nghiệm_
 
 Bộ dataset sau khi gán nhãn được lưu thành raw_data.csv
 
-## 3. Huấn luyện mô hình
+## 3. Tiền xử lý
 ## Tiền xử lý:
 Thư mục Preprocessing bao gồm:
 - Thư mục [Dictionaries](Dictionaries/): phục vụ cho quá trình tiền xử lý
@@ -70,7 +72,7 @@ Sử dụng Precision vì ưu tiên dự đoán đúng cảm xúc một khi đã
 ### Kết luận: 
 Từ kết quả mỗi nhiệm vụ, ta thấy sự khác biệt có ý nghĩa thống kê và phương pháp embedding USE là lựa chọn tối ưu. 
 
-## 4. Huấn luyện mô hình:
+## 4. Huấn luyện mô hình
 <img width="1229" height="235" alt="image" src="https://github.com/user-attachments/assets/ee761251-bc9c-41a4-8620-47c24fdbcc0b" />
 
 ### Bài toán nhỏ:
@@ -111,11 +113,11 @@ Một tập dữ liệu các câu bình luận từ 2 nhà hàng được thu th
     - [Specialized_problem_Aspect_Regconition.ipynb](Model/data/Specialized_problem_Aspect_Regconition.ipynb): giải quyết bài toán nhỏ - nhiệm vụ 1
     - [Specialized_problem_ABSA.ipynb](Model/data/Specialized_problem_ABSA.ipynb): giải quyết bài toán nhỏ - nhiệm vụ 2
       
-## 5. Tổng kết
+## 5. Tài liệu liên quan
 - Trình bày tại: [Slide](slide.pdf)
 - Phân tích chi tiết: [Paper](paper.pdf)
 
-## V. Thành viên:
+## 6. Thành viên
 | Họ và tên              | MSSV       |
 |------------------------|------------|
 | Võ Ngọc Anh Thy        | 23521565   |
